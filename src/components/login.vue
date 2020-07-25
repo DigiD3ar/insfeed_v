@@ -15,7 +15,7 @@
         }
     },
      methods: {
-      login({ res }) {
+      connected({ res }) {
        console.log(res)
       }
     }
