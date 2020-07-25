@@ -9,8 +9,13 @@
     components: {
       VFacebookLogin
     },
+    data() { 
+    return { 
+        id:process.env.fb_id, 
+    }
+},
     mounted() {
-  console.log(process.env.fb_id)
+  console.log(this.id)
 }
    
 }
