@@ -1,5 +1,5 @@
 <template>
-  <v-facebook-login app-id=process.env.fb_id></v-facebook-login>
+  <v-facebook-login app-id="{{ id }}"></v-facebook-login>
 </template>
 
 <script>
@@ -8,6 +8,11 @@
   export default {
     components: {
       VFacebookLogin
+    },
+    data() { 
+    return { 
+        id: process.env.fb_id
     }
+}
   }
 </script>
