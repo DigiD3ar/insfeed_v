@@ -1,5 +1,5 @@
 <template>
-  <v-facebook-login app-id="{{process.env.fb_id}}"></v-facebook-login>
+  <v-facebook-login app-id="{{ fb }}"></v-facebook-login>
 </template>
 
 <script>
@@ -11,7 +11,7 @@
     },
     data() { 
       return { 
-          id:process.env.fb_id
+          fb:process.env.fb
       }
     }
    
