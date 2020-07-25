@@ -9,11 +9,16 @@
     components: {
       VFacebookLogin
     },
-     data () {
+    data () {
         return {
           id: process.env.VUE_APP_FB,
         }
+    },
+     methods: {
+      login({ res }) {
+       console.log(res)
       }
+    }
     
    
   }
