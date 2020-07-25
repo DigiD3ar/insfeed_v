@@ -1,5 +1,5 @@
 <template>
-  <v-facebook-login :app-id="fb"></v-facebook-login>
+  <v-facebook-login :app-id="id ? id :''"></v-facebook-login>
 </template>
 
 <script>
@@ -9,11 +9,13 @@
     components: {
       VFacebookLogin
     },
-    data() { 
-      return { 
-          fb:process.env.fb
+     data () {
+       console.log(process.env.VUE_APP_FB)
+        return {
+          id: process.env.VUE_APP_FB,
+        }
       }
-    }
+    
    
-}
+  }
 </script>
