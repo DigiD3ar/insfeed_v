@@ -1,5 +1,5 @@
 <template>
-  <v-facebook-login app-id="{{ fb }}"></v-facebook-login>
+  <v-facebook-login :app-id="fb"></v-facebook-login>
 </template>
 
 <script>
