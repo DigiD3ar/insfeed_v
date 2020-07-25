@@ -1,5 +1,5 @@
 <template>
-  <v-facebook-login app-id=""></v-facebook-login>
+  <v-facebook-login app-id="{{id}}"></v-facebook-login>
 </template>
 
 <script>
@@ -10,13 +10,10 @@
       VFacebookLogin
     },
     data() { 
-    return { 
-        id:process.env.fb_id, 
+      return { 
+          id:process.env.fb_id
+      }
     }
-},
-    mounted() {
-  console.log(this.id)
-}
    
 }
 </script>
