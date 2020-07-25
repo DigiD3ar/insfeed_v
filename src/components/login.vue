@@ -10,7 +10,6 @@
       VFacebookLogin
     },
      data () {
-       console.log(process.env.VUE_APP_FB)
         return {
           id: process.env.VUE_APP_FB,
         }
